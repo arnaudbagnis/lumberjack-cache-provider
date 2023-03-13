@@ -1,0 +1,28 @@
+{
+  "name": "arnaudbagnis/lumberjack-cache-provider",
+  "description": "Add a Symfony Cache provider into a Lumberjack",
+  "type": "package",
+  "require": {
+    "php": ">=7.3||>=8.0",
+    "symfony/cache": "^6.0",
+    "rareloop/lumberjack-core": "^5.0"
+  },
+  "license": "mit",
+  "authors": [
+    {
+      "name": "Arnaud Bagnis",
+      "email": "arnaud.bagnis@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "CacheProvider\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  }
+}
